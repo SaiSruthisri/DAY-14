@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int n,x,y;
+	    cin>>n>>x>>y;
+	    int num1=n*x;
+	    int num2;
+	    
+	    int k=n/2;
+	    int rem=n%2;
+	    if(rem>0)
+	    {
+	        num2=(k*y+rem*x);
+	    }
+	    else
+	    {
+	        num2=k*y;
+	    }
+	    int maxi=max(num1,num2);
+	    cout<<maxi<<"\n";
+	}
+
+}
